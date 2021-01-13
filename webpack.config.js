@@ -5,10 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    index: './src/js/index.js',
-    print: './src/js/print.js',
-  },
+  entry: './src/js/index.js',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
@@ -21,21 +18,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Home',
       template: 'src/templates/index.pug'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Product',
-      filename: 'product.html',
-      template: 'src/templates/product.pug'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Access',
-      filename: 'access.html',
-      template: 'src/templates/access.pug'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Contact',
-      filename: 'contact.html',
-      template: 'src/templates/contact.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'stylesheets/[name].css'
