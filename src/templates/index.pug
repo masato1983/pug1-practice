@@ -1,10 +1,19 @@
-- const item = "Joe's item"
+-
+  const item = "Joe's item";
+  const items = ['item a', 'item b', 'item c'];
 
 div
   ul
     li= item
-    li item 2
-    li item 3
+    li= items[0]
+    li= items[1]
+    li= items[2]
+    li
+      = items[0]
+      = items[1]
+      = items[2]
+    li= items
+
     li.
       item 4 is
       the best
