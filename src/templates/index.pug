@@ -1,6 +1,6 @@
-mixin link(href, name)
-  a(href=href)= name
+mixin listName(...names)
+  ul
+    each name in names
+      li= name
 
-+link('https://google.com', 'Google')
-+link('https://ja-jp.facebook.com/', 'facebook')
-+link('https://twitter.com/home', 'twitter')
++listName('Joe', 'James', 'Jonny', 'billy')
