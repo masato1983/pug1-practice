@@ -16,8 +16,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: 'Home',
       template: 'src/templates/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: 'src/templates/about.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'stylesheets/[name].css'
