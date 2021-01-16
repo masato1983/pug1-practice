@@ -1,1 +1,11 @@
 @import './index.scss';
+
+header {
+  background: black;
+
+  a {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+  }
+}
