@@ -19,6 +19,11 @@ module.exports = {
       title: 'Home',
       template: 'src/templates/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      title: 'about',
+      filename: 'about.html',
+      template: 'src/templates/about.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'stylesheets/[name].css'
     }),
